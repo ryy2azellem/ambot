@@ -1,51 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess Learning Platform</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+  <meta charset="UTF-8">
+  <title>Welcome to LuxeGlow Skincare</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe6f2;
+      border-radius: 8px;
+    }
+    .header h1 {
+      margin: 0;
+      color: #cc0066;
+    }
+    .content {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #444;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 20px 0;
+      background-color: #cc0066;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .product {
+      width: 45%;
+      margin: 10px 0;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Welcome to LuxeGlow ✨</h1>
+    </div>
 
-    <header>
-        <div class="container">
-            <h1>Unlock Your Chess Potential: Learn to Play and Love the Game!</h1>
-            <p class="subheadline">Whether you're a complete beginner or looking to sharpen your skills, our interactive platform makes learning chess fun and easy.</p>
-        </div>
-    </header>
+    <!-- Content -->
+    <div class="content">
+      <p>Hi Beautiful,</p>
+      <p>Thank you for joining the LuxeGlow family! As a warm welcome, here’s your <strong>10% OFF discount code: WELCOME10</strong>.</p>
+      <a href="#" class="button">Shop Now</a>
+    </div>
 
-    <section class="features">
-        <div class="container">
-            <div class="feature">
-                <h3>Interactive Lessons</h3>
-                <p>Step-by-step tutorials designed for all skill levels.</p>
-            </div>
-            <div class="feature">
-                <h3>Practice Games</h3>
-                <p>Play against AI or other learners to improve your strategy.</p>
-            </div>
-            <div class="feature">
-                <h3>Community Forum</h3>
-                <p>Connect with fellow chess enthusiasts and share your progress.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Featured Products -->
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/250x250.png?text=Glow+Serum" alt="Glow Serum">
+        <p><strong>Glow Serum</strong></p>
+        <p>$29</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/250x250.png?text=Hydrating+Cream" alt="Hydrating Cream">
+        <p><strong>Hydrating Cream</strong></p>
+        <p>$39</p>
+      </div>
+    </div>
 
-    <section class="cta">
-        <div class="container">
-            <p>Ready to start your chess journey?</p>
-            <a href="#" class="button">Start Your Free Trial Today!</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Chess Learning Platform</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <!-- Footer -->
+    <div class="footer">
+      <p>You are receiving this email because you subscribed to LuxeGlow Skincare.</p>
+      <p><a href="#">Unsubscribe</a></p>
+    </div>
+  </div>
 </body>
 </html>
