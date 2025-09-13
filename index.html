@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -138,6 +138,51 @@
       margin: 10px 0;
     }
 
+    /* SIGNUP SECTION */
+    .signup {
+      background: linear-gradient(135deg, var(--accent), #fff);
+      padding: 60px 24px;
+      text-align: center;
+      margin: 80px auto;
+    }
+    .signup h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      margin-bottom: 16px;
+      color: #4a2a2c;
+    }
+    .signup p {
+      color: var(--muted);
+      margin-bottom: 28px;
+      font-size: 16px;
+    }
+    .signup-form {
+      display: flex;
+      max-width: 480px;
+      margin: auto;
+      gap: 12px;
+    }
+    .signup-form input[type="email"] {
+      flex: 1;
+      padding: 14px 16px;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .signup-form button {
+      padding: 14px 22px;
+      border-radius: 30px;
+      border: none;
+      background: var(--gold);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .signup-form button:hover {
+      background: #a3834c;
+    }
+
     /* FOOTER */
     footer {
       background: #fdf4f6;
@@ -196,6 +241,16 @@
     </div>
   </section>
 
+  <!-- SIGNUP -->
+  <section id="subscribe" class="signup">
+    <h2>Get 10% Off Your First Order</h2>
+    <p>Join the LuxeGlow family for exclusive offers, beauty tips, and product launches.</p>
+    <form class="signup-form" onsubmit="handleSignup(event)">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     © <span id="year"></span> LuxeGlow. All rights reserved. | hello@luxeglow.com
@@ -203,6 +258,14 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    function handleSignup(e) {
+      e.preventDefault();
+      const email = e.target.email.value;
+      alert("Thanks for subscribing! We'll send your 10% discount code to: " + email);
+      e.target.reset();
+    }
   </script>
 </body>
 </html>
+      
+      
