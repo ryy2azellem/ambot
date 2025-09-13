@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -156,32 +156,6 @@
       margin-bottom: 28px;
       font-size: 16px;
     }
-    .signup-form {
-      display: flex;
-      max-width: 480px;
-      margin: auto;
-      gap: 12px;
-    }
-    .signup-form input[type="email"] {
-      flex: 1;
-      padding: 14px 16px;
-      border-radius: 30px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-    .signup-form button {
-      padding: 14px 22px;
-      border-radius: 30px;
-      border: none;
-      background: var(--gold);
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    .signup-form button:hover {
-      background: #a3834c;
-    }
 
     /* FOOTER */
     footer {
@@ -212,7 +186,7 @@
       <a href="#subscribe" class="btn btn-outline">Get 10% Off</a>
     </div>
     <div>
-      <img src="https://images.unsplash.com/photo-1612817159949-195b9a5f5481?w=1200" alt="LuxeGlow skincare bottles" />
+      <img src="images/hero.jpg" alt="LuxeGlow skincare bottles" />
     </div>
   </section>
 
@@ -221,19 +195,19 @@
     <h2>Our Bestsellers</h2>
     <div class="products">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?w=800" alt="Radiance Serum">
+        <img src="images/product1.jpg" alt="Radiance Serum">
         <h3>Radiance Serum</h3>
         <p class="price">₱1,195</p>
         <a href="#" class="btn btn-primary">Add to Cart</a>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1587486913049-6202a5799b7f?w=800" alt="HydraGlow Moisturizer">
+        <img src="images/product2.jpg" alt="HydraGlow Moisturizer">
         <h3>HydraGlow Moisturizer</h3>
         <p class="price">₱995</p>
         <a href="#" class="btn btn-primary">Add to Cart</a>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1556228453-40c1c0d2a0ee?w=800" alt="Purity Cleanser">
+        <img src="images/product3.jpg" alt="Purity Cleanser">
         <h3>Purity Cleanser</h3>
         <p class="price">₱595</p>
         <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -241,14 +215,13 @@
     </div>
   </section>
 
-  <!-- SIGNUP -->
+  <!-- SIGNUP with Klaviyo -->
   <section id="subscribe" class="signup">
     <h2>Get 10% Off Your First Order</h2>
     <p>Join the LuxeGlow family for exclusive offers, beauty tips, and product launches.</p>
-    <form class="signup-form" onsubmit="handleSignup(event)">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
+    <!-- KLAVIYO EMBED FORM -->
+    <div class="klaviyo-form-ABC123"></div>
+    <script type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=PUBLIC_API_KEY_HERE"></script>
   </section>
 
   <!-- FOOTER -->
@@ -258,14 +231,8 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-    function handleSignup(e) {
-      e.preventDefault();
-      const email = e.target.email.value;
-      alert("Thanks for subscribing! We'll send your 10% discount code to: " + email);
-      e.target.reset();
-    }
   </script>
 </body>
 </html>
-      
-      
+           
+    
