@@ -48,22 +48,19 @@
 
     /* HERO */
     .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 40px;
-      padding: 80px 24px;
+      text-align: center;
+      padding: 100px 24px;
       max-width: var(--maxw);
       margin: auto;
     }
-    .hero-text h1 {
+    .hero h1 {
       font-family: 'Playfair Display', serif;
       font-size: 48px;
       margin: 0 0 16px;
       color: #4a2a2c;
       line-height: 1.2;
     }
-    .hero-text p {
+    .hero p {
       color: var(--muted);
       font-size: 18px;
       margin-bottom: 24px;
@@ -86,56 +83,6 @@
       border: 2px solid var(--accent-dark);
       color: var(--accent-dark);
       margin-left: 12px;
-    }
-    .hero img {
-      width: 100%;
-      border-radius: var(--radius);
-      box-shadow: 0 20px 40px rgba(125,65,69,0.15);
-      animation: float 6s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-12px); }
-    }
-
-    /* PRODUCTS */
-    #products {
-      max-width: var(--maxw);
-      margin: 80px auto;
-      padding: 0 24px;
-      text-align: center;
-    }
-    #products h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      margin-bottom: 40px;
-      color: #4a2a2c;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
-    }
-    .card {
-      background: #fff;
-      border-radius: var(--radius);
-      box-shadow: 0 12px 30px rgba(125,65,69,0.08);
-      padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 16px 36px rgba(125,65,69,0.15);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 16px;
-    }
-    .price {
-      color: var(--gold);
-      font-weight: 700;
-      margin: 10px 0;
     }
 
     /* SIGNUP SECTION */
@@ -171,48 +118,15 @@
   <header>
     <div class="brand">LuxeGlow</div>
     <nav>
-      <a href="#products">Shop</a>
-      <a href="#about">About</a>
       <a href="#subscribe">Subscribe</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Glow Naturally, Shine Confidently</h1>
-      <p>Premium skincare that’s clean, cruelty-free, and made to reveal your natural radiance.</p>
-      <a href="#products" class="btn btn-primary">Shop Now</a>
-      <a href="#subscribe" class="btn btn-outline">Get 10% Off</a>
-    </div>
-    <div>
-      <img src="images/hero.jpg" alt="LuxeGlow skincare bottles" />
-    </div>
-  </section>
-
-  <!-- PRODUCTS -->
-  <section id="products">
-    <h2>Our Bestsellers</h2>
-    <div class="products">
-      <div class="card">
-        <img src="images/product1.jpg" alt="Radiance Serum">
-        <h3>Radiance Serum</h3>
-        <p class="price">₱1,195</p>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
-      </div>
-      <div class="card">
-        <img src="images/product2.jpg" alt="HydraGlow Moisturizer">
-        <h3>HydraGlow Moisturizer</h3>
-        <p class="price">₱995</p>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
-      </div>
-      <div class="card">
-        <img src="images/product3.jpg" alt="Purity Cleanser">
-        <h3>Purity Cleanser</h3>
-        <p class="price">₱595</p>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
-      </div>
-    </div>
+    <h1>Glow Naturally, Shine Confidently</h1>
+    <p>Premium skincare that’s clean, cruelty-free, and made to reveal your natural radiance.</p>
+    <a href="#subscribe" class="btn btn-primary">Get 10% Off</a>
   </section>
 
   <!-- SIGNUP with Klaviyo -->
@@ -221,7 +135,7 @@
     <p>Join the LuxeGlow family for exclusive offers, beauty tips, and product launches.</p>
     <!-- KLAVIYO EMBED FORM -->
     <div class="klaviyo-form-XG2esp"></div>
-   <script type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XJ2BKs"></script> 
+    <script type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XJ2BKs"></script>
   </section>
 
   <!-- FOOTER -->
@@ -234,8 +148,4 @@
   </script>
 </body>
 </html>
-           
-    
-
-
-
+          
